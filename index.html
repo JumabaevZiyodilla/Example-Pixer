@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixer</title>
-    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 <body>
     <!-- header start -->
@@ -25,6 +25,23 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./services.html">Xizmatlar</a>
+                            <ul class="nav-services-list">
+                                <li class="nav-services-item">
+                                    <a class="nav-services-link" href="#">Vebsayt</a>
+                                </li>
+                                <li class="nav-services-item">
+                                    <a class="nav-services-link" href="#">Telegram bot</a>
+                                </li>
+                                <li class="nav-services-item">
+                                    <a class="nav-services-link" href="#">SMM</a>
+                                </li>
+                                <li class="nav-services-item">
+                                    <a class="nav-services-link" href="#">Grafik dizayn</a>
+                                </li>
+                                <li class="nav-services-item">
+                                    <a class="nav-services-link" href="#">CRM tizim</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./portfolio.html">Portfolio</a>
@@ -36,7 +53,7 @@
                             <a class="nav-link" href="./blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacts.html">Kontaktlar</a>
+                            <a class="nav-link" href="#contact">Kontaktlar</a>
                         </li>
                     </ul>
                 </nav>
@@ -47,7 +64,7 @@
     </header>
     <!-- header end -->
     <!-- main start -->
-    <main>
+    <main class="site-main">
         <!-- section business start -->
         <section class="business">
             <div class="container">
@@ -61,7 +78,7 @@
                                 ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar
                             </p>
                         </div>
-                        <a class="header-link-tel business-link" href="#">Xizmatlar bilan tanishish</a>
+                        <a class="header-link-tel business-link" href="#services">Xizmatlar bilan tanishish</a>
                     </div>
                     <iframe class="business-video" width="458" height="258"
                         src="https://www.youtube.com/embed/6_pru8U2RmM" title="YouTube video player"
@@ -73,7 +90,7 @@
         <!-- section business end -->
 
         <!-- section services start  -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="services-box-primary">
                     <div class="services-box">
@@ -116,7 +133,7 @@
                         </li>
                     </ul>
                     <span class="services-box-tiny">
-                        <a class="header-link-tel services-order-link business-link" href="#">Buyurtma berish</a>
+                        <a class="header-link-tel services-order-link business-link" href="#order">Buyurtma berish</a>
                         <a class="services-link" href="#">Xizmatlar sahifasiga o’tish</a>
                     </span>
                 </div>
@@ -186,7 +203,7 @@
                         </li>
                     </ol>
                     <span class="work-box-tiny">
-                        <a class="header-link-tel business-link" href="#">Buyurtma berish</a>
+                        <a class="header-link-tel business-link" href="#order">Buyurtma berish</a>
                     </span>
                 </div>
             </div>
@@ -194,7 +211,7 @@
         <!-- section work end -->
 
         <!-- section order start -->
-        <section class="order">
+        <section class="order" id="order">
             <div class="container">
                 <div class="order-box-primary">
                     <div class="order-box">
@@ -210,7 +227,7 @@
                             aria-label="Enter your name" placeholder="Ismingiz" required>
                         <input class="business-text input-name" type="tel" name="user_phone"
                             aria-label="Enter your phone number" placeholder="Telefon raqamingiz" required>
-                        <select class="business-text input-name" name="service_type" aria-label="Choose our services"
+                        <select class="business-text input-name order-select" name="service_type" aria-label="Choose our services"
                             required>
                             <option value="" selected disabled>Xizmat turi</option>
                             <option value="Vebsayt tuzish">Vebsayt tuzish</option>
@@ -231,7 +248,7 @@
     <!-- main end -->
 
     <!-- footer start -->
-    <footer class="site-footer">
+    <footer class="site-footer" id="contact">
         <div class="container">
             <div class="footer-box-primary">
                 <div class="footer-box">
