@@ -111,51 +111,56 @@ img {
 }
 
 .nav-link {
+    display: inline-block;
     padding: 16px;
     color: var(--text-color);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    border-bottom: 3px solid transparent;
     text-decoration: none;
 }
 
 .nav-link:hover {
-    border-bottom: 3px solid var(--footer-bgcolor);
+    border-color: var(--footer-bgcolor);
 }
 
 .nav-link:active {
     color: var(--link-color);
+    border-bottom: 3px solid #5E5E5E;
     background-color: var(--bgcolor-active);
-    border: none;
 }
 
 .nav-item:nth-child(2) {
     position: relative;
-}
-
-.nav-item:nth-child(2):hover .nav-services-list {
-    display: block;
-    transition: all 0.5s ease;
-}
-
-.nav-item:nth-child(2):hover .nav-services-link {
-    display: block;
-    transition: all 0.5s ease;
+    z-index: 1;
 }
 
 .nav-services-list {
     position: absolute;
-    top: 37px;
-    left: 0px;
+    top: 55px;
+    left: -17px;
     display: none;
     margin: 0px;
     padding: 0px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 24px #0000001a;
+    border-radius: 5px;
     list-style-type: none;
 }
 
+
+.nav-item:nth-child(2):hover .nav-services-list {
+    display: block;
+}
+
+
 .nav-services-item {
     width: 132px;
-    background-color: #fff;
 }
 
 .nav-services-link {
+    display: block;
     padding: 16px;
     color: var(--text-color);
     text-decoration: none;
@@ -172,7 +177,6 @@ img {
 }
 
 .header-link-tel {
-    margin: 4px;
     padding: 8px 16px;
     font-family: "Open Sans";
     font-size: 15px;
@@ -245,6 +249,10 @@ img {
     color: var(--text-color);
 }
 
+.business-link {
+    margin: 0px;
+}
+
 .business-link:hover {
     color: var(--link-color);
     background-color: var(--bgcolor-link-hover);
@@ -284,22 +292,26 @@ img {
     margin: 0px;
     text-align: center;
 }
+
 .website-list {
     padding: 0px;
     list-style-type: none;
 }
+
 .website-item {
     position: relative;
     margin-left: 20px;
     margin-bottom: 8px;
     font-size: 16px;
-line-height: 24px;
-color: var(--text-color);
+    line-height: 24px;
+    color: var(--text-color);
 }
-.website-item:last-child{
+
+.website-item:last-child {
     margin-bottom: 16px;
 }
-.website-item::before{
+
+.website-item::before {
     content: "";
     position: absolute;
     top: 4px;
@@ -312,6 +324,7 @@ color: var(--text-color);
     border-radius: 50%;
 
 }
+
 .services-list {
     display: flex;
     justify-content: center;
@@ -415,7 +428,7 @@ color: var(--text-color);
 
 .services-box-tiny {
     display: block;
-    width: 378px;
+    width: 380px;
     margin: 0 auto;
 }
 
@@ -576,7 +589,8 @@ color: var(--text-color);
     border-color: transparent;
     border-radius: 5px;
 }
-.order-select{
+
+.order-select {
     position: relative;
     width: 320px;
     background-image: url("../img/input-line.svg");
@@ -584,7 +598,8 @@ color: var(--text-color);
     background-position-x: calc(50% + 130px);
     appearance: none;
 }
-.order-btn{
+
+.order-btn {
     display: block;
     width: 167px;
     margin: 0 auto;
@@ -734,9 +749,11 @@ color: var(--text-color);
     border-radius: 5px;
     box-shadow: 0px 8px 8px var(--shadow-color);
 }
-.service-item:last-child{
+
+.service-item:last-child {
     margin-bottom: 0px;
 }
+
 .service-item:hover {
     box-shadow: 0px 12px 21px var(--shadow-color);
 }
@@ -752,25 +769,31 @@ color: var(--text-color);
     width: 200px;
     height: 128px;
 }
-.service-item-website::before{
+
+.service-item-website::before {
     background-image: url("../img/website-illustration.svg");
 }
-.service-item-telegram::before{
+
+.service-item-telegram::before {
     height: 117px;
     background-image: url("../img/bot-illustration.svg");
 }
-.service-item-smm::before{
+
+.service-item-smm::before {
     height: 146px;
     background-image: url("../img/smm-illustration.svg");
 }
-.service-item-graphic::before{
+
+.service-item-graphic::before {
     height: 145px;
     background-image: url("../img/design-illustration.svg");
 }
-.service-item-crm::before{
+
+.service-item-crm::before {
     height: 154px;
     background-image: url("../img/crm-illustration.svg");
 }
+
 .service-item-box {
     width: 541px;
     margin-left: auto;
@@ -797,7 +820,7 @@ color: var(--text-color);
     margin-left: 20px;
 }
 
-.service-bottom{
+.service-bottom {
     margin-bottom: 16px;
 }
 
